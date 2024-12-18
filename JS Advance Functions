@@ -1,0 +1,62 @@
+**JavaScript Function**
+What is Function?
+Function is a block of executable code. When it is invoked
+
+*Features**
+1- Has parameters
+2- Return value back
+3- Also can be assigned to the variable
+
+Types of Function
+Mainly Two types
+1- Tradational Function
+2- Function Expression
+
+Let's deep dive in Tradational Function
+
+Syntex:
+function funcName(param1, param2){
+//block of code that should be execute
+}
+//code will execute when the function will be invoked or called
+//Calling a Function
+funcName(arg1,arg2);
+Function without Parameter
+function noParam(){
+console.log("A Function with out Paramaeters is callled.");
+}
+noParam();
+
+Function with default Parameters
+
+function defParam(name = "Mubeen"){
+console.log("By Using default Parametrs like name = Mubeen");
+}
+defParam();
+
+// Function have an function as a Parameter
+
+function funcParam(myFunc){
+
+}
+
+funcParam(myFunc());
+function myFunc(){
+console.log("Function having a Function as a Parameter");
+}
+
+//Function has a return type as a Function
+
+function retFunction(){
+return function myfunc(){
+console.log("a function return a function");
+}
+}
+retFunction();
+
+// Function with a return type
+
+function retType(){
+return 4 + 5;
+}
+retType();
